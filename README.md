@@ -1,6 +1,4 @@
-<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/0a57a645-5f92-45ac-b477-98893e6cc4a1" /># Creditcard_Abnormaltransaction_Detection_Model     
-
-# 주제   
+ # 주제   
 신용카드 이상거래 탐지모델 개발 
 
 # 데이터탐색
@@ -12,6 +10,7 @@
  
 
 | model	| precision_test	| recall_test |	f1_score_test |
+| ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
 | 0	| MLP	| 0.87	| 0.81	| 0.84 | 
 | 1	| LightGBM	| 0.94	| 0.82	| 0.87 | 
 | 2	| ANN	| 0.80	| 0.82	| 0.81 | 
@@ -119,7 +118,8 @@ y_pred_lgb_over = lgbm_best_est.predict(x_train)
 # Under_Over Sampling 비교
 <img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/be353099-2e27-4318-8ee3-46d52d8025b0" />
 
-| model	| accuracy	| precision	recall	| f1_score	| roc_auc | 
+| model	| accuracy	| precision	recall	| f1_score	| roc_auc |
+| ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
 | 0	| XGboost_under	| 0.13	| 0.00	| 0.99	| 0.56	| 0.56 | 
 | 1	| Xgboost_over	| 1.00	| 0.95	| 0.93	| 0.97	| 0.97 | 
 | 2	| LightGBM_over	| 1.00	| 0.92	| 0.92	| 0.96	| 0.96 | 
